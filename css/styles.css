@@ -1,1 +1,407 @@
-/* CSS here :) */
+/* MEDIA QUERIES AT THE VERY BOTTOM */
+
+@import url("resetCSS.css");
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ----- Navbar ----------------------------------------------------------------------------------- */
+
+.main-nav {
+    background-color: #3a3633;
+    position: fixed;
+    width: 100%;
+    border-bottom: 1px solid whitesmoke;
+    z-index: 10;
+}
+
+.main-nav > img {
+    width: 5%;
+}
+
+.hamburger-menu {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+}
+
+.hamburger-menu-list {
+    text-align: center;
+    display: none;
+}
+
+.menu-link {
+    padding: 15px;
+    background-color: #3a3633c9;
+    color: white;
+    display: block;
+}
+
+.menu-link:hover {
+    background-color: #5a5958b4;
+}
+
+.main-nav:hover > .hamburger-menu-list {
+    display: block;
+}
+
+/* ----- Falcon 9 ------------------------------------------------------------------------------------ */
+
+.falcon-9 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url("/imgs/bg.jpg") no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 432px;
+}
+
+.falcon-9 > p {
+    margin-bottom: 40px;
+    margin-left: 25px;
+    color: white;
+    font-size: 1.4em;
+}
+
+/* .falcon-main-box {
+    width: 70%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid white;
+} */
+
+.falcon-main-box {
+    height: 50%;
+    background-color: #3a3633b4;
+    overflow: auto;
+}
+
+.falcon-main-box-title {
+    font-size: 1.3em;
+}
+
+.falcon-main-box > p {
+    margin: 30px 0;
+    color: white;
+    text-align: center;
+}
+
+/* ----- Features ------------------------------------------------------------------------------------ */
+
+.features {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.features > div {
+    width: 60%;
+    margin: 30px auto;
+    box-shadow: 0px 0px 14px -5px rgba(0,0,0,0.75);
+}
+
+.features-ul {
+    text-align: center;
+}
+
+.features-ul > li {
+    margin: 30px 10px;
+}
+
+.features-ul > li > button {
+    width: 100%;
+    background-color: #3a3633;
+    padding: 15px 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.feature-bold {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+/* ----- Gradient-section --------------------------------------------------------------------------- */
+
+.gradient-section {
+    height: 900px;
+}
+
+.before-gradient {
+    height: 50%;
+    background-color: #3a3633;
+}
+
+.before-gradient > .before-gradient-first-child {
+    padding-left: 10%;
+    padding-top: 10%;
+    color: white;
+}
+
+.before-gradient > div > h1 {
+    font-size: 2.5em;
+}
+
+.before-gradient > div > p {
+    max-width: 70%;
+    margin-top: 35px;
+    margin-right: 0;
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.gradient-part {
+    height: 50%;
+    background-image: linear-gradient(to right, #fff, rgb(41, 70, 233));
+}
+
+.gradient-part > div {
+    text-align: right;
+    color: white;
+}
+
+.gradient-part > div > h1 {
+    padding-top: 15%;
+    padding-right: 5%;
+    font-size: 3em;
+}
+
+.gradient-part > div > p {
+    padding-top: 40px;
+    padding-right: 5%;
+    font-size: 1.2em;
+}
+
+.middle-box {
+    position: relative;
+    width: 40%;
+    height: 125px;
+    background-color: #3a3633;
+    border: 5px solid white;
+    left: 26%;
+    top: 140px;
+}
+
+.middle-box > ul {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.middle-box > ul > li {
+    margin: 10px 0;
+}
+
+.middle-box-p {
+    color: red;
+    font-size: 1.5em;
+}
+
+.middle-box-animation-notice {
+    color: white;
+}
+
+@keyframes rotate360 {
+    100% { transform: rotate(360deg)};
+}
+
+.middle-box:hover {
+    animation: rotate360 2s ease;
+}
+
+/* ----- Image gallery --------------------------------------------------------------------------- */
+
+.image-gallery {
+    color: rgba(255, 255, 255, 0);
+    font-size: 2em;
+}
+
+.gallery-image-wrapper {
+    overflow: hidden;
+}
+
+
+.tesla {
+    background: url("/imgs/tesla.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.tesla:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.cool-cat {
+    background: url("/imgs/procat.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.cool-cat:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.hyper-loop {
+    background: url("/imgs//hyperloop.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.hyper-loop:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.sneaky-cat {
+    background: url("/imgs/sneakycat.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.sneaky-cat:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.bfr {
+    background: url("/imgs/bfr.jpeg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.bfr:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.fun-cat {
+    background: url("/imgs/funnycat.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.fun-cat:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* ----- Mailing list --------------------------------------------------------------------------- */
+
+.mailing-list {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mailing-alignment {
+    display: flex;
+}
+
+.mailing-list > ul {
+    line-height: 2.6;
+    font-size: 0.85em;
+}
+
+.mailing-input {
+    border: 2px solid grey;
+    border-radius: 4px 0 0 4px;
+}
+
+.mailing-button {
+    border: 2px solid grey;
+    background-color: grey;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.mailing-checkbox {
+    -webkit-appearance: none;
+    border: 2px solid grey;
+    height: 20px;
+    width: 20px;
+    border-radius: 4px;
+    margin-left: 0;
+    cursor: pointer;
+}
+
+.mailing-checkbox:checked {
+    background-color: rgba(26, 99, 194, 0.692);
+    background-image: url("/imgs/checkbox.svg");
+    background-position: center;
+    background-size: contain;
+    color: white;
+}
+
+.checkbox-alignment {
+    display: flex;
+    align-items: center;
+}
+
+/* ----- Footer --------------------------------------------------------------------------- */
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 20px;
+    border-top: 1px solid rgba(128, 128, 128, 0.404);
+}
+
+.footer > div > ul {
+    line-height: 2;
+    margin: 25px 0;
+}
+
+/* ----- Media querie --------------------------------------------------------------------------- */
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .image-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 1.1em;
+    }
+
+    .gallery-image-wrapper {
+        width: 33.333%;
+    }
+}
