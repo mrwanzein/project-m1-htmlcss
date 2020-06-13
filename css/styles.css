@@ -50,6 +50,10 @@ html {
     display: block;
 }
 
+.regular-nav-menu-list {
+    display: none;
+}
+
 /* ----- Falcon 9 ------------------------------------------------------------------------------------ */
 
 .falcon-9 {
@@ -69,13 +73,6 @@ html {
     font-size: 1.4em;
 }
 
-/* .falcon-main-box {
-    width: 70%;
-    height: 50%;
-    background-color: rgba(0, 0, 0, 0);
-    border: 5px solid white;
-} */
-
 .falcon-main-box {
     height: 50%;
     background-color: #3a3633b4;
@@ -90,6 +87,10 @@ html {
     margin: 30px 0;
     color: white;
     text-align: center;
+}
+
+.falcon-main-box-non-mobile {
+    display: none;
 }
 
 /* ----- Features ------------------------------------------------------------------------------------ */
@@ -403,5 +404,86 @@ html {
 
     .gallery-image-wrapper {
         width: 33.333%;
+    }
+
+    .hamburger-menu, .main-nav:hover > .hamburger-menu-list {
+        display: none;
+    }
+
+    .falcon-9 > p.falcon-title, .falcon-main-box {
+        display: none;
+    }
+    
+    .regular-nav-menu-list {
+        color: white;
+        float: right;
+        display: flex;
+        padding-top: 22px;
+    }
+
+    .regular-nav-menu-list > li {
+        padding: 0 20px;
+    }
+    
+    .regular-nav-menu-list > li > a {
+        color: white;
+    }
+
+    .regular-nav-menu-list > li > a:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .falcon-main-box-non-mobile {
+    width: 70%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 5px solid white;
+    display: unset;
+    margin: auto;
+    }
+
+    .falcon-9 {
+        height: 600px;
+    }
+
+    .falcon-main-box-non-mobile {
+        display: flex;
+    }
+
+    .falcon-main-box-non-mobile-title {
+        width: 50%;
+    }
+
+    .falcon-main-box-non-mobile-title > p {
+        color: white;
+        font-size: 3.3em;
+        padding: 60px 10px 0;
+        line-height: 1.4;
+        font-weight: bold;
+    }
+
+    .falcon-main-box-non-mobile-title-subsection {
+        background-color: #3a363363;
+    }
+
+    .falcon-main-box-subtitle-non-mobile {
+        padding: 10px 0 20px 10px;
+        margin-top: 20px;
+        color: white;
+        font-size: 2em;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+
+    .falcon-main-box-non-mobile-title-subsection-description {
+        display: flex;
+        padding-top: 20px;
+        margin: 10px 15px 0;
+        border-top: 1px dashed white;
+    }
+
+    .falcon-main-box-non-mobile-title-subsection-description > p {
+        color: white;
+        margin: 0 1px;
     }
 }
